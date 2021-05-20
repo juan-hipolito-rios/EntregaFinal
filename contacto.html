@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>Contacto</title>
+</head>
+<body class="bg-dark text-white">
+ <!------------_BANNER------------>
+ <div class="jumbotron text-center banner" id="bigTtl">      
+  <h1 class="tituloGrandeIndex">Ferreteria "El Cid" <img src="/Media/herramientas.png" alt=""></h1> 
+  <P class="eslogan">Siempre más barato</P>
+</div>
+
+
+<!-- Barra de navegación------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item"> 
+              <div class="dropdown">
+               <button class="btn btn-dark dropdown-toggle" type="button" style="color:rgba(255,255,255,.55);" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre nosotros
+               </button>
+               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="opiniones.html">Opiniones</a></li>
+                  <li><a class="dropdown-item" href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                </ul>
+             </div>
+         </li>
+          <li class="nav-item">
+           <a class="nav-link active" href="contacto.html">Contacto</a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ofertas.html">Ofertas</a>
+          </li>
+        </ul>
+     </div>
+    </div>
+  </nav>
+        
+     
+        <!-- FORMULARIO DE CONTACTO!!-->
+      <section class="contacto__section">
+        <div class="text-center container-fluid" id="contacto__div">
+            
+            <form enctype="multipart/form-data" id="contacto__form">
+              <p class="contacto__titulo">Ingresá los datos de contacto</p>
+              <div class="contacto__card datos__contacto">
+                <fieldset>
+                      <legend class="contacto__subtitulo"> Datos de contacto</legend>
+                      <div id="datosContacto">
+                         <label for="nombre">Nombre</label>
+                         <input type="text" name="nombre" id="nombre">
+
+                         <label for="apellido"> Apellido</label>
+                         <input type="text" name="apellido" id="apellido">
+
+                         <label for="email">Correo :</label>
+                         <input type="text" name="email" id="email" placeholder="ejemplo@hotmail.com">
+                      </div>
+                </fieldset>
+              </div>  
+
+              <div class="contacto__card">
+                <fieldset>
+                    <legend class="contacto__subtitulo">Tipo de contacto</legend>
+                  
+                    <label for="tipo-contacto">Sugerencia</label>                    
+                    <input type="radio" name="tipo-contacto" id="sugerencia" value="sugerencia">
+                    <label for="tipo-contacto">Queja</label>
+                    <input type="radio" name="tipo-contacto" id="queja" value="queja">
+                    <label for="tipo-contacto">Otros</label>
+                    <input type="radio" name="tipo-contacto" id="otros" value="otros">
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="80" rows="5" placeholder="Escribi tu comentario.."></textarea>
+
+                </fieldset>
+              </div>
+
+              <div class="contacto__card">
+                <fieldset>
+                    <legend class="contacto__subtitulo">Terminos y condiciones</legend>
+                    <p class="col-md-12 col-xs-12 col-lg-12">La información brindada en este formulario es de uso privado. Ferreteria "El Cid" no realizará distribución ni difusión de los datos brindados por quien complete el formulario. La finalidad de la información requerida no tiene objetivos publicitarios ni involucra a terceros</p>
+                    <label for="acepta-terminos">Acepto los términos y condiciones</label>
+                    <input type="checkbox" name="acepta-terminos" id="acepta-terminos">
+                </fieldset>
+              </div>
+
+              <div class="contacto__card">
+                <input class="contacto__boton" type="submit"> <input class="contacto__boton" type="reset" value="Restablecer">
+              </div>                       
+            </form> 
+         
+        </div>
+      </section>
+
+ <!------------------PIE DE PAGINA------------------------------------------->
+ <footer class="footer col-md-12 col-xs-12 col-lg-12">
+  <div class="footer__div">
+    <h6>Sitio web desarrollado por <span>Juan Hipolito Rios</span></h6>
+    <a href="https://www.instagram.com/gohipo/" target="_blank"><img src="Media/insta.png"></a>
+    <a href="https://www.twitter.com/gohipo_/" target="_blank" ><img src="Media/twitter.png"></a>
+    <a href="https://www.facebook.com/HipoRios" target="_blank" ><img src="Media/faceb.png"> </a>
+    <a href="mailto:hipolito90.50@gmail.com"><img src="Media/email.png" alt=""></a>
+  </div>
+
+</footer> 
+      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
