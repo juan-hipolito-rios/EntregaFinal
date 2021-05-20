@@ -484,9 +484,11 @@ h6 {
     flex-direction: row;
     flex-wrap: wrap; }
   .categorias__ul {
-    width: 200px;
+    width: 40%;
     text-align: left;
-    list-style: none; }
+    list-style: none;
+    font-size: 16px;
+    overflow: hidden; }
   /*---OPINIONES----*/
   .opiniones {
     margin: 10px 0;
