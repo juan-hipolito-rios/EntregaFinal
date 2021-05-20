@@ -393,14 +393,21 @@ h6 {
   /*---------PRODUCTOS------*/
   .categorias {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     ul{
       h6{
-        font-size: 16px;
+        font-size: 100%;
         padding: 4px;
       }
-      font-size: 14px;
+      font-size: 80%;
     } }
+
+  .categorias__ul{
+  max-width: 45%;
+  margin: 10px 5px;
+  overflow: hidden;
+  }
   
   /*OPINIONES*/
   .opiniones {
