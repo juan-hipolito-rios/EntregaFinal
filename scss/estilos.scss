@@ -586,7 +586,16 @@ h6 {
       width: 100%;
       align-items: center; }
   #comentario {
-    width: 90%; } }
+    width: 90%; } 
+  
+  /*OFERTAS*/
+  .ofertas__section__div{
+    width: 100%;
+  }
+  .descuentos__div{
+    width: 100%;
+  }
+  }
 
 /*---------------PC --------------*/
 @media only screen and (min-width: 769px) {
