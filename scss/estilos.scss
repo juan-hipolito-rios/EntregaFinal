@@ -668,7 +668,7 @@ h6 {
     overflow: hidden; }
   #footerOpiniones{
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
   }  
   /*PREGUNTAS FRECUENTES*/
   .preguntas__section {
@@ -713,7 +713,11 @@ h6 {
     transform: scale(1.1); }
   #footerOfertas{
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
+  }
+
+  .descuentos{
+    margin: 5px;
   }
   
 
