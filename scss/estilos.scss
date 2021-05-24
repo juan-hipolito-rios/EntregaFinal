@@ -160,6 +160,52 @@ h6 {
   filter: opacity(50%); }
 
 /*----------------BEM -----------------*/
+
+
+.amoladoras{
+  ul{
+    display: none;
+    list-style: none;
+  }
+}
+
+.amoladoras:hover{
+  color: black;
+  ul{
+    display: list-item;
+    color: white;
+  }
+}
+
+.lijadoras{
+  ul{
+    display: none;
+    list-style: none;
+  }
+}
+
+.lijadoras:hover{
+  color: black;
+  ul{
+    display: list-item;
+    color: white;
+  }
+}
+
+.motosierras{
+  ul{
+    display: none;
+    list-style: none;
+  }
+}
+
+.motosierras:hover{
+  color: black;
+  ul{
+    display: list-item;
+    color: white;
+  }
+}
 .ofertas__section {
   text-align: center;
   background-color: transparent;
@@ -197,6 +243,7 @@ h6 {
   overflow: hidden; }
 
 .opiniones__titulo {
+  font-size: 30px;
   background-color: #3c3c3c;
   border-radius: 10px 10px 0 0; }
 
@@ -204,7 +251,11 @@ h6 {
   font-size: 20px; }
 
 .opiniones__tabla {
-  color: black; }
+  color: black;
+  td{
+    border-top: black solid 2px;
+    
+  } }
 
 .preguntas__section {
   display: flex;
@@ -214,7 +265,7 @@ h6 {
   background-color: gray;
   border-radius: 10px;
   width: 300px;
-  margin: 0px 10px; }
+  margin: 0px 5px; }
 
 .preguntas__section__titulo {
   background-color: #3c3c3c;
@@ -254,13 +305,18 @@ h6 {
   margin: 10px 0;
   background-color: gray;
   width: 1000px;
-  border-radius: 10px;
-  padding-bottom: 10px; }
+  border-radius: 10px;}
 
 .contacto__boton {
   margin: 10px 0;
   border-radius: 5px;
-  width: 120px; }
+  width: 120px;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px; 
+  letter-spacing: 1px;
+  margin: 15px 5px;}
 
 .categorias {
   display: flex;
@@ -274,6 +330,9 @@ h6 {
   list-style: none;
   border-radius: 10px; }
 
+.categorias__ul li:hover{
+  color:black;
+}
 .categorias__ul__titulo {
   background-color: #3c3c3c;
   text-align: center;
@@ -347,6 +406,8 @@ h6 {
 /*---------------CELULAR-------------------*/
 @media only screen and (max-width: 360px) {
   #bigTtl{
+    padding: 20px 0;
+    background-color: yellow;
     h1{
       font-size: 35px;
     }
@@ -417,6 +478,7 @@ h6 {
       font-size: 16px;
     } }
   
+    
   #footerOpiniones{
     position: absolute;
     bottom: 0px;
@@ -490,6 +552,21 @@ h6 {
 
 /*-------------tablet----------------*/
 @media only screen and (min-width: 369px) and (max-width: 768px) {
+
+  #bigTtl{
+    padding: 20px 0;
+    background-color: yellow;
+    h1{
+      font-size: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
   /*INDEX*/
   .divIndex{
     padding: 10px 0;
@@ -586,7 +663,8 @@ h6 {
       width: 100%;
       align-items: center; }
   #comentario {
-    width: 90%; } 
+    width: 90%;
+    overflow: hidden; } 
   
   /*OFERTAS*/
   .ofertas__section__div{
@@ -601,7 +679,20 @@ h6 {
 @media only screen and (min-width: 769px) {
   /*INDEX*/
   #bigTtl{
+    padding: 20px 0;
+    background-color: yellow;
     width: 100%;
+    h1{
+      font-size: 55px;
+      letter-spacing: 5px;
+    }
+    img{
+      height: 50px;
+      width: 50px;
+    }
+    p{
+      font-size: 20px;
+    }
   }
   main{
     margin-top: 10px;
