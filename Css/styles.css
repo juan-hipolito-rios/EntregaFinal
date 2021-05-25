@@ -224,12 +224,20 @@ h6 {
   border-radius: 10px 10px 0 0; }
 
 .opiniones__subtitulo {
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 20px;
+  width: 80%;
+  align-self: center; }
 
 .opiniones__tabla {
   color: black; }
   .opiniones__tabla td {
-    border-top: black solid 2px; }
+    border-top: black solid 2px;
+    padding: 10px; }
+  .opiniones__tabla th {
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 5px; }
 
 .preguntas__section {
   display: flex;
@@ -278,6 +286,12 @@ h6 {
   background-color: gray;
   width: 1000px;
   border-radius: 10px; }
+
+#email {
+  margin-bottom: 10px; }
+
+#acepta {
+  margin-bottom: 5px; }
 
 .contacto__boton {
   margin: 10px 0;
@@ -751,3 +765,6 @@ h6 {
 .carousel-indicators {
   width: unset;
   left: -12.5%; }
+
+#dropdownMenuButton2:hover {
+  color: white; }
